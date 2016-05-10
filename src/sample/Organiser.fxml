@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#generateRandom" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <DatePicker layoutX="7.0" layoutY="84.0" onAction="#getDate" />
+      <TextArea layoutX="7.0" layoutY="124.0" prefHeight="200.0" prefWidth="174.0" />
+      <Button layoutX="7.0" layoutY="355.0" mnemonicParsing="false" onAction="#generateRandom" text="Zapisz" />
+      <Button layoutX="131.0" layoutY="355.0" mnemonicParsing="false" text="Anuluj" />
+      <ToolBar prefHeight="40.0" prefWidth="600.0">
+        <items>
+            <Button mnemonicParsing="false" text="Dodaj Alarm" />
+          <Button mnemonicParsing="false" text="Eksportuj" />
+            <Button mnemonicParsing="false" text="Zapisz do XML" />
+            <Button mnemonicParsing="false" text="Wczytaj z XML" />
+            <Button mnemonicParsing="false" text="O programie" />
+        </items>
+      </ToolBar>
+      <Button layoutX="258.0" layoutY="355.0" mnemonicParsing="false" text="Usuń zdarzenie" />
+      <Button layoutX="435.0" layoutY="355.0" mnemonicParsing="false" text="Ustaw alarm" />
+      <Label fx:id="myMessage" layoutX="208.0" layoutY="125.0" prefHeight="200.0" prefWidth="369.0" />
+   </children>
+</Pane>
